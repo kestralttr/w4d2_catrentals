@@ -1,0 +1,11 @@
+  <head>
+    <meta charset="utf-8">
+    <title>Cat Index</title>
+  </head>
+  <body>
+    <ul>
+    <% @cats.each do |cat|%>
+    <li><%= link_to cat.name, cat_url(cat) %></li>
+    <% end %>
+  </ul>
+  </body>
